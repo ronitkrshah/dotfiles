@@ -1,0 +1,38 @@
+# Alacritty Configuration file
+
+# Import Files
+import = ["~/.config/alacritty/themes/tokyonight_moon.toml"]
+
+# Terminal
+[env]
+term = "xterm-256color"
+
+# Windows specific configuration
+[window]
+dynamic_title = false
+decorations_theme_variant = "Dark"
+
+# Font Configuration
+[font]
+normal = { family = "Hasklug nerd Font Mono", style="Regular" }
+bold = { family = "Hasklug nerd Font Mono", style="Bold" }
+italic = { family = "Hasklug nerd Font Mono", style="Italic" }
+bold_italic = { family = "Hasklug nerd Font Mono", style="Bold Italic" }
+size = 14.0
+offset = { y = 2 }
+
+
+# Cursor Settings
+[cursor]
+vi_mode_style = { shape = "Block", blinking = "Off" }
+blink_interval = 400
+
+
+# Mouse Settings
+[mouse]
+hide_when_typing = true
+
+# Keybindings
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullScreen"}]
+

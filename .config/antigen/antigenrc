@@ -1,0 +1,12 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from external repos
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle z-shell/F-Sy-H --branch=main
+
+# Select theme
+antigen theme ronitkrshah/frontcube --branch=main
+
+# Tell Antigen that you're done
+antigen apply
