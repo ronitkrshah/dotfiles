@@ -1,10 +1,12 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "tiagovla/tokyodark.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    require("kanagawa").setup()
+    require("tokyodark").setup({
+      gamma = 1.4,
+    })
 
-    vim.cmd.colorscheme("kanagawa")
+    vim.cmd.colorscheme("tokyodark")
   end
 }
