@@ -1,50 +1,46 @@
--- Editor Options
-
 local opt = vim.opt
 
--- number
+-- Enable Number
 opt.number = true
 opt.relativenumber = true
 
--- line wrap
+-- Line Wrap
 opt.wrap = false
 
--- indentation
-opt.tabstop = 4
+-- Indent
 opt.shiftwidth = 4
-opt.softtabstop = 4
 opt.expandtab = true
 opt.smartindent = true
 
--- search
+-- Ignore Casing While Searching
 opt.ignorecase = true
 opt.smartcase = true
 
--- cursor
+-- Show Cursor Line
 opt.cursorline = true
 
--- true colors
+-- True Colors For Better Dev Env
 opt.termguicolors = true
 
--- backup
+-- Disable Backups
 opt.swapfile = false
 opt.backup = false
 opt.writebackup = false
 
--- disable highlight
+-- Disable Highlight In Searching
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
--- scroll
+-- Keep Cursor On 10 Lines Up From Bottom
 opt.scrolloff = 10
 
--- updatetime
+-- Update Time
 opt.updatetime = 100
 
--- color column
-opt.colorcolumn = "80"
+-- Color Column (A Vertical Line on 80 chars)
+-- opt.colorcolumn = "80"
 
--- sign column
+-- Sign Column
 opt.signcolumn = "yes"
 
 -- Show whitespace characters

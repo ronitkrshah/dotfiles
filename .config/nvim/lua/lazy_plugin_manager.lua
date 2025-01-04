@@ -11,8 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Setup Lazy Plugin Manager
 require("lazy").setup({
-    spec = "ronitkrshah.plugins",
+    spec = "plugins",
     change_detection = { notify = false },
     defaults = { lazy = true },
 })
