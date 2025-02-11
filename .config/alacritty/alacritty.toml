@@ -1,7 +1,7 @@
 # Alacritty Configuration file
 
 [general]
-import = ["~/.config/alacritty/themes/tokyonight_moon.toml"]
+import = ["~/.config/alacritty/themes/kanagawa.toml"]
 
 # Terminal
 [env]
@@ -17,10 +17,10 @@ padding = { x = 10}
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style="Regular" }
 bold = { family = "JetBrainsMono Nerd Font", style="Bold" }
-italic = { family = "consolas", style="Italic" }
-bold_italic = { family = "consolas", style="Bold Italic" }
+italic = { family = "JetBrainsMono Nerd Font", style="Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style="Bold Italic" }
 size = 14.0
-offset = { y = 4 }
+offset = { y = 17 }
 
 
 # Cursor Settings
