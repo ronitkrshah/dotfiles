@@ -44,8 +44,14 @@ opt.updatetime = 100
 opt.signcolumn = "yes"
 
 -- Show whitespace characters
-vim.opt.list = true
-vim.opt.listchars = { tab = "»·", trail = "·", space = "·" }
+opt.list = true
+opt.listchars = { tab = "»·", trail = "·", space = "·" }
+
+-- Folding
+vim.o.foldcolumn = '1'         -- '0' is not bad
+vim.o.foldlevel = 99           -- Using ufo provider need a large value, feel free to decrease the value
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
 
 -- Set Cursor to block
 vim.cmd("set guicursor=i:block")
