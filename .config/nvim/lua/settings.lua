@@ -38,7 +38,7 @@ opt.scrolloff = 10
 opt.updatetime = 100
 
 -- Color Column (A Vertical Line on 80 chars)
--- opt.colorcolumn = "80"
+opt.colorcolumn = "80"
 
 -- Sign Column
 opt.signcolumn = "yes"
