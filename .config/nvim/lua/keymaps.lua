@@ -17,7 +17,7 @@ keymap.set("n", "<leader>h", "<C-w>h")
 keymap.set("n", "<leader>l", "<C-w>l")
 
 -- Close Current Pane Easily
-keymap.set("n", "<A-x>", ":bdelete<CR>")
+-- keymap.set("n", "<A-x>", ":bdelete<CR>")
 
 -- Make Resizing Easier
 keymap.set("n", "<leader><Up>", ":resize +5<CR>")

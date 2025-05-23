@@ -1,9 +1,24 @@
 return {
-    "rebelot/kanagawa.nvim",
-    lazy = false,
+    "olimorris/onedarkpro.nvim",
     priority = 1000,
+    lazy = false,
     config = function()
-        require("kanagawa").setup()
-        vim.cmd.colorscheme("kanagawa");
+        require("onedarkpro").setup({
+            styles = {
+                tags = "italic",
+                methods = "bold",
+                functions = "bold,italic",
+                keywords = "italic",
+                comments = "italic",
+                parameters = "italic",
+                conditionals = "italic",
+                virtual_text = "italic",
+            },
+            colors = {
+                yellow = "#D8B449"
+            }
+        })
+
+        vim.cmd("colorscheme vaporwave")
     end
 }
