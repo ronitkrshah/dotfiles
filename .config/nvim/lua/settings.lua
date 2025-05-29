@@ -28,8 +28,8 @@ opt.backup = false
 opt.writebackup = false
 
 -- Disable Highlight In Searching
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+opt.hlsearch = false
+opt.incsearch = true
 
 -- Keep Cursor On 10 Lines Up From Bottom
 opt.scrolloff = 10
@@ -45,13 +45,16 @@ opt.signcolumn = "yes"
 
 -- Show whitespace characters
 opt.list = true
-opt.listchars = { tab = "»·", trail = "·", space = "·" }
+opt.listchars = { tab = "»·", trail = "·" }
 
 -- Folding
-vim.o.foldcolumn = '1'         -- '0' is not bad
-vim.o.foldlevel = 99           -- Using ufo provider need a large value, feel free to decrease the value
-vim.o.foldlevelstart = 99
-vim.o.foldenable = true
+opt.foldcolumn = '1' -- '0' is not bad
+opt.foldlevel = 99   -- Using ufo provider need a large value, feel free to decrease the value
+opt.foldlevelstart = 99
+opt.foldenable = true
+
+-- Use System Clipboard
+opt.clipboard = "unnamedplus"
 
 -- Set Cursor to block
 vim.cmd("set guicursor=i:block")

@@ -4,9 +4,9 @@
 -- | |_) | ' /\___ \
 -- |  _ <| . \ ___) |
 -- |_| \_\_|\_\____/
--- 
+--
 
 require("settings")
 require("keymaps")
-require("lsp_keymaps")
 require("lazy_plugin_manager")
+require("lsp_keymaps")
