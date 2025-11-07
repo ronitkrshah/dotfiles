@@ -53,8 +53,5 @@ opt.foldlevel = 99   -- Using ufo provider need a large value, feel free to decr
 opt.foldlevelstart = 99
 opt.foldenable = true
 
--- Use System Clipboard
-opt.clipboard = "unnamedplus"
-
 -- Set Cursor to block
 vim.cmd("set guicursor=i:block")
