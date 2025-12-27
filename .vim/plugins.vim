@@ -18,6 +18,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 " Colorscheme Settings
