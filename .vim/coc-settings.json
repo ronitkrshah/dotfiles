@@ -2,6 +2,8 @@
     "suggest.noselect": true,
     "outline.previewBorderRounded": true,
     "diagnostic.virtualText": true,
+    "diagnostic.virtualTextPrefix": "",
+    "diagnostic.virtualTextCurrentLineOnly": false,
     "suggest.removeDuplicateItems": true,
     "diagnostic.hintSign": "",
     "diagnostic.errorSign": "",

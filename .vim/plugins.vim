@@ -13,6 +13,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-fuzzbox/fuzzbox.vim'
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'voldikss/vim-floaterm'
+
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
