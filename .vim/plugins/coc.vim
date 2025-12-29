@@ -1,6 +1,6 @@
 
 " The required servers
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pairs']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-pairs', '@tcx4c70/coc-csharp']
 
 " Use <c-space> to trigger completion
 if has('nvim')
