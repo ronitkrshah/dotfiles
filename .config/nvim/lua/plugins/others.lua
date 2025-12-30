@@ -1,21 +1,40 @@
 return {
+    -- Theme
     {
-        "L3MON4D3/LuaSnip",
-        dependencies = { "rafamadriz/friendly-snippets" },
-        version = "v2.*",
-        build = "make install_jsregexp",
+        'AstroNvim/astrotheme',
         config = function()
-            local luasnip = require("luasnip")
-            require("luasnip.loaders.from_vscode").lazy_load()
-
-            vim.keymap.set({ "i", "s" }, "<C-j>", function() luasnip.jump(1) end, { silent = true })
-            vim.keymap.set({ "i", "s" }, "<C-k>", function() luasnip.jump(-1) end, { silent = true })
+            require("astrotheme").setup({})
+            vim.cmd('colorscheme astrotheme')
         end
     },
+
+    -- Sourround
+    {
+        'kylechui/nvim-surround',
+        version = '*',
+        opts = {}
+    },
+
+    -- Git
+    {
+        "lewis6991/gitsigns.nvim",
+        opts = {
+            current_line_blame = true,
+            current_line_blame_opts = {
+                delay = 100,
+            }
+        }
+    },
+
+    -- Vim UI
+    {
+        "stevearc/dressing.nvim",
+        opts = { title_pos = "left" }
+    },
+
     -- Floating Terminal
     {
         'numToStr/FTerm.nvim',
-        keys = { '<A-i>' },
         config = function()
             require('FTerm').setup({
                 -- Double Border
@@ -28,23 +47,37 @@ return {
         end
     },
 
-    -- Git Module
+    -- Delete active buffer
     {
-        "lewis6991/gitsigns.nvim",
-        event = { "BufReadPost" },
+        'famiu/bufdelete.nvim',
         config = function()
-            require('gitsigns').setup()
+            local buffer = require('bufdelete');
+            local keymap = vim.keymap;
+
+            keymap.set("n", "<A-x>", function()
+                buffer.bufdelete(0, false)
+            end)
         end
     },
 
-    -- Custom Prompt UI
+    -- Status Line
     {
-        "stevearc/dressing.nvim",
-        event = "VeryLazy",
+        'akinsho/bufferline.nvim',
         config = function()
-            require("dressing").setup({
-                title_pos = "left",
+            require('bufferline').setup({
+                options = {
+                    diagnostics_update_in_insert = true
+                }
             })
+
+            vim.keymap.set('n', '<A-,>', ':BufferLineCyclePrev<CR>')
+            vim.keymap.set('n', '<A-.>', ':BufferLineCycleNext<CR>')
         end
     },
+
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        opts = {},
+    }
 }

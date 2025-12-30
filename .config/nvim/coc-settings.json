@@ -1,0 +1,44 @@
+{
+    "suggest.noselect": true,
+    "outline.previewBorderRounded": true,
+    "coc.preferences.formatOnSave": true,
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextPrefix": "  ",
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "suggest.removeDuplicateItems": true,
+    "diagnostic.hintSign": "",
+    "diagnostic.errorSign": "",
+    "diagnostic.infoSign": "",
+    "diagnostic.warningSign": "",
+    "suggest.pumFloatConfig": {
+        "border": true,
+        "rounded": true
+    },
+    "suggest.completionItemKindLabels": {
+        "method": "󰆧",
+        "variable": "󰀫",
+        "constant": "󰏿",
+        "struct": "󰙅",
+        "class": "󰠱",
+        "interface": "󰜰",
+        "text": "󰉿",
+        "enum": "󰕘",
+        "enumMember": "󰕚",
+        "color": "󰏘",
+        "property": "󰜢",
+        "field": "󰜢",
+        "unit": "󰑭",
+        "file": "󰈙",
+        "value": "󰎠",
+        "event": "󰉁",
+        "folder": "󰉋",
+        "keyword": "󰌋",
+        "snippet": "󰑋",
+        "operator": "󰆕",
+        "reference": "󰈇",
+        "typeParameter": "󰊄",
+        "default": "󰋙"
+    },
+    "snippets.ultisnips.pythonPrompt": false
+}
+
