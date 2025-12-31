@@ -1,10 +1,20 @@
 return {
     -- Theme
     {
-        'AstroNvim/astrotheme',
+        'folke/tokyonight.nvim',
+        lazy = false,
+        priority = 1000,
         config = function()
-            require("astrotheme").setup({})
-            vim.cmd('colorscheme astrotheme')
+            require("tokyonight").setup({
+                style = 'storm',
+                styles = {
+                    functions = {
+                        italic = true,
+                        bold = true,
+                    }
+                }
+            })
+            vim.cmd('colorscheme tokyonight')
         end
     },
 

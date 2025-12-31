@@ -12,6 +12,7 @@ opt.wrap = false
 opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
+opt.autoindent = true
 
 -- Ignore Casing While Searching
 opt.ignorecase = true
