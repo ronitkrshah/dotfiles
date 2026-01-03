@@ -10,7 +10,6 @@ return {
             "coc-prettier",
             "coc-snippets",
             "coc-tsserver",
-            "@tcx4c70/coc-csharp",
             "coc-lua"
         }
 
