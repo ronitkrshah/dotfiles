@@ -1,30 +1,30 @@
 return {
     -- Theme
     {
-        'folke/tokyonight.nvim',
+        'AstroNvim/astrotheme',
         lazy = false,
         priority = 1000,
         config = function()
-            require("tokyonight").setup({
-                style = 'storm',
-                styles = {
-                    functions = {
-                        italic = true,
-                        bold = true,
-                    }
-                }
-            })
-            vim.cmd('colorscheme tokyonight')
+            require('astrotheme').setup()
+            vim.cmd.colorscheme("astrotheme")
         end
     },
-
-    -- Sourround
     {
         'kylechui/nvim-surround',
         version = '*',
         opts = {}
     },
-
+    {
+        'github/copilot.vim',
+    },
+    {
+        "CopilotC-Nvim/CopilotChat.nvim",
+        dependencies = {
+            { "nvim-lua/plenary.nvim", branch = "master" },
+        },
+        build = "make tiktoken",
+        opts = {},
+    },
     -- Git
     {
         "lewis6991/gitsigns.nvim",

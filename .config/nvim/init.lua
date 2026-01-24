@@ -1,6 +1,5 @@
 local opt = vim.opt
 
-
 -- Enable Number
 opt.number = true
 opt.relativenumber = true
@@ -53,7 +52,6 @@ opt.foldenable = true
 
 -- Set Cursor to block
 vim.cmd("set guicursor=i:block")
-
 require("keymap")
 
 -- Lazy Plugin Manager

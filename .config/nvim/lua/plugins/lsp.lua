@@ -3,6 +3,7 @@ return {
     branch = 'release',
     config = function()
         local keyset = vim.keymap.set
+        vim.g.coc_node_args = { '--nolazy', '--inspect-brk=5858' }
 
         vim.g.coc_global_extensions = {
             "coc-pairs",
