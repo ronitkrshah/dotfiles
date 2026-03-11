@@ -14,15 +14,8 @@ SAVEHIST=10000
 source $HOME/.config/antigen/antigen.zsh
 antigen init $HOME/.config/antigen/antigenrc
 
-# ENV PATHS
-LBIN=$HOME/Bin
 # Alias
-alias vi=nvim
-alias dotfiles="git --git-dir=$HOME/Dotfiles --work-tree=$HOME"
 alias ls="eza --icons=always"
-
-export EDITOR=nvim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
