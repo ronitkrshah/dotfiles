@@ -1,7 +1,7 @@
 # Alacritty Configuration file
 #
 [general]
-import = ["~/.config/alacritty/themes/astrotheme.toml"]
+import = ["~/.config/alacritty/themes/kanso_ink.toml"]
 
 # Terminal
 [env]
