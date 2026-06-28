@@ -1,13 +1,21 @@
 return {
-	"webhooked/kanso.nvim",
-	priority = 1000,
-	config = function()
-		require("kanso").setup({
-			background = { -- map the value of 'background' option to a theme
-				dark = "ink", -- try "zen", "mist" or "pearl" !
-				light = "pearl", -- try "zen", "mist" or "ink" !
-			},
-		})
-		vim.cmd("colorscheme kanso")
-	end,
+    "loctvl842/monokai-pro.nvim",
+    priority = 1000,
+    config = function()
+        require("monokai-pro").setup({
+            filter = "octagon",
+            styles = {
+                comment = { italic = false },
+                keyword = { italic = false },
+                type = { italic = false },
+                storageclass = { italic = false },
+                structure = { italic = false },
+                parameter = { italic = false },
+                annotation = { italic = false },
+                tag_attribute = { italic = false },
+            },
+        })
+
+        vim.cmd.colorscheme("monokai-pro")
+    end
 }

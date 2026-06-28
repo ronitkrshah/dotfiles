@@ -1,0 +1,13 @@
+{
+  "diagnostic.hintSign": "H",
+  "diagnostic.errorSign": "E",
+  "diagnostic.warningSign": "W",
+  "diagnostic.infoSign": "I",
+  "diagnostic.virtualText": true,
+
+  "suggest.pumFloatConfig": {
+    "border": true,
+    "rounded": true,
+    "shadow": true,
+  },
+}

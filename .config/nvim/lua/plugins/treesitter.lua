@@ -15,6 +15,7 @@ return {
 				"query",
 				"javascript",
 				"typescript",
+                                "python",
 				"tsx",
 				"markdown",
 			},

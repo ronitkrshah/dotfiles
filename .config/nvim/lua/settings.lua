@@ -8,7 +8,7 @@ opt.relativenumber = true
 opt.wrap = false
 
 -- Indent
-opt.shiftwidth = 4
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 opt.autoindent = true

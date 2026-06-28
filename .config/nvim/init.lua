@@ -1,5 +1,5 @@
 require("settings")
-require("pm")
+require("package_manager")
 require("keymap")
 
 
