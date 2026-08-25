@@ -14,11 +14,17 @@ SAVEHIST=10000
 source $HOME/.config/antigen/antigen.zsh
 antigen init $HOME/.config/antigen/antigenrc
 
+export JAVA_HOME=$HOME/Bin/java
+export ANDROID_HOME=$HOME/Bin/android
+export PATH=$PATH:$JAVA_HOME/bin:$HOME/Bin/node/bin
+
+export EDITOR=nvim
+
 # Alias
-alias vi=nvim
+alias nv=nvim
 alias ls="eza --icons=always"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias webcam="scrcpy --video-source=camera --camera-id=1 --no-audio --v4l2-sink=/dev/video0 --no-video-playback --max-size=2440 --video-bit-rate=20M"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

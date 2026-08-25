@@ -1,21 +1,14 @@
 return {
-    "loctvl842/monokai-pro.nvim",
+    "folke/tokyonight.nvim",
     priority = 1000,
     config = function()
-        require("monokai-pro").setup({
-            filter = "octagon",
+        require("tokyonight").setup({
             styles = {
-                comment = { italic = false },
-                keyword = { italic = false },
-                type = { italic = false },
-                storageclass = { italic = false },
-                structure = { italic = false },
-                parameter = { italic = false },
-                annotation = { italic = false },
-                tag_attribute = { italic = false },
-            },
+                functions = { italic = true, bold = true },
+                comments = { italic = true, bold = true },
+            }
         })
 
-        vim.cmd.colorscheme("monokai-pro")
+        vim.cmd.colorscheme("tokyonight")
     end
 }

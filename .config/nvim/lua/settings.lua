@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+-- Border
+opt.winborder = "single"
+
 -- Enable Number
 opt.number = true
 opt.relativenumber = true
