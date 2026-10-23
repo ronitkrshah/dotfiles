@@ -1,10 +1,7 @@
 local keymap = vim.keymap
 
--- The Leader (SPACE)
-vim.g.mapleader = " "
-
 -- Quickly Exit INSERT Mode
-keymap.set("i", "jk", "<ESC>");
+keymap.set("i", "jk", "<ESC>")
 
 -- Easier Pane Creation
 keymap.set("n", "<leader>|", "<C-w>v")

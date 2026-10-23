@@ -1,31 +1,14 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	dependencies = { "hiphish/rainbow-delimiters.nvim" },
-	branch = "main",
-	build = ":TSUpdate",
-	config = function()
-		-- local treesitter = require("nvim-treesitter.configs")
-		--
-		-- treesitter.setup({
-		-- 	ensure_installed = {
-		-- 		"c",
-		-- 		"lua",
-		-- 		"vim",
-		-- 		"vimdoc",
-		-- 		"query",
-		-- 		"javascript",
-		-- 		"typescript",
-		-- 		"python",
-		-- 		"tsx",
-		-- 		"markdown",
-		-- 	},
-		-- 	highlight = {
-		-- 		enable = true,
-		-- 		additional_vim_regex_highlighting = false,
-		-- 	},
-		-- 	indent = {
-		-- 		enable = true,
-		-- 	},
-		-- })
-	end,
+  'nvim-treesitter/nvim-treesitter',
+  lazy = false,
+  build = ':TSUpdate',
+  config = function()
+    local ts = require('nvim-treesitter')
+    ts.install({'javascript', 'typescript','vimdoc', 'lua'})
+
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = { '<filetype>' },
+      callback = function() vim.treesitter.start() end,
+    })
+  end
 }
