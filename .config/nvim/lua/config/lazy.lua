@@ -14,13 +14,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
-
 require("lazy").setup({
-  spec = "plugins",
+  spec = {
+    { import = "plugins" },
+    { import = "plugins.lsp" },
+  },
   install = { colorscheme = { "habamax" } },
-
+  checker = { enabled = true },
 })

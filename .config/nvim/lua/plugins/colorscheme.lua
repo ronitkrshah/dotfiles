@@ -1,14 +1,10 @@
 return {
-    "folke/tokyonight.nvim",
-    priority = 1000,
-    config = function()
-        require("tokyonight").setup({
-            styles = {
-                functions = { italic = true, bold = true },
-                comments = { italic = true, bold = true },
-            }
-        })
-
-        vim.cmd.colorscheme("tokyonight")
-    end
+  "https://github.com/catppuccin/nvim",
+  name = "catppuccin",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("catppuccin").setup()
+    vim.cmd("colorscheme catppuccin-macchiato")
+  end,
 }

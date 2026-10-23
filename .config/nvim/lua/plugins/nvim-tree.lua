@@ -1,8 +1,13 @@
 return {
-	"nvim-tree/nvim-tree.lua",
+	"antosha417/nvim-lsp-file-operations",
 	dependencies = {
-		"nvim-tree/nvim-web-devicons",
-		"stevearc/dressing.nvim",
+		{
+			"nvim-tree/nvim-tree.lua",
+			dependencies = {
+				"nvim-tree/nvim-web-devicons",
+				"stevearc/dressing.nvim",
+			},
+		},
 	},
 	config = function()
 		require("nvim-tree").setup({
@@ -30,9 +35,17 @@ return {
 					quit_on_open = true,
 				},
 			},
+			view = {
+				adaptive_size = true,
+				-- side = 'right'
+			},
 		})
 
 		-- Keymap
 		vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>")
+
+		require("lsp-file-operations").setup({
+			auto_save = true,
+		})
 	end,
 }
