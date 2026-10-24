@@ -1,13 +1,8 @@
 return {
-	"antosha417/nvim-lsp-file-operations",
+	"nvim-tree/nvim-tree.lua",
 	dependencies = {
-		{
-			"nvim-tree/nvim-tree.lua",
-			dependencies = {
-				"nvim-tree/nvim-web-devicons",
-				"stevearc/dressing.nvim",
-			},
-		},
+		"nvim-tree/nvim-web-devicons",
+		"stevearc/dressing.nvim",
 	},
 	config = function()
 		require("nvim-tree").setup({
